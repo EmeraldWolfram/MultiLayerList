@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/qrGen"
+        android:layout_alignParentTop="true"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:contentDescription="@string/qr_gen"/>
+
+    <EditText
+        android:id="@+id/qrEntry"
+        android:layout_below="@id/qrGen"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/qrGenButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gen"
+        android:onClick="onGenerate" />
+
+</RelativeLayout>
